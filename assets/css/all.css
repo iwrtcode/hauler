@@ -536,22 +536,28 @@ a{
 	text-decoration: none;
 }
 .text-common-style-heading{
-	font-family: 'LatoSemibold', Helvetica, Arial, sans-serif;
+	font-family: 'Lato', Helvetica, Arial, sans-serif;
 	text-rendering: optimizeLegibility;
 }
-.text-common-style-content{
-	font-family: 'LatoLight', Helvetica, Arial, sans-serif;
+
+.text-common-style-sub-heading{
+	font-family: 'LatoMedium', Helvetica, Arial, sans-serif;
 	-webkit-font-smoothing:antialiased;
 	font-smooth:always;
 	text-rendering: optimizeLegibility;
+}
 
-}	
-
+.text-common-style-content{
+	font-family: 'LatoRegular', Helvetica, Arial, sans-serif;
+	-webkit-font-smoothing:antialiased;
+	font-smooth:always;
+	text-rendering: optimizeLegibility;
+}
 #logo{
 	 margin:34px 0 0 0;
 	 text-align: center;
 	 font-size: 32px;
-	 font-family: 'LatoSemibold';
+	 font-family: 'Lato';
 	 -webkit-font-smoothing:antialiased;
 	  font-smooth:always;
 	  text-rendering: optimizeLegibility;
@@ -565,9 +571,10 @@ a{
 }
 
 #signin-container h3{
-	color:#a6adb2;
+	color:#000000;
 	text-transform: capitalize;
 	text-align: center;
+	font-weight: bold;
 }
 
 #signin-fields > input[type="text"],#signin-fields > input[type="password"]{
@@ -576,14 +583,14 @@ a{
 	  height:35px;
 	  width:449px;
 	  background-color: #ffffff;
-	  font-family: 'LatoSemibold', Helvetica, Arial, sans-serif;
+	  font-family: 'LatoRegular', Helvetica, Arial, sans-serif;
 	  font-size: 16px;
 	  border:1px solid #e5e8e9;
 }
 
 #signin-fields > input[type="text"]::-webkit-input-placeholder,#signin-fields > input[type="password"]::-webkit-input-placeholder {
 	color: #000000;
-	font-family: 'LatoSemibold', Helvetica, Arial, sans-serif;
+	font-family: 'LatoRegular', Helvetica, Arial, sans-serif;
 	text-transform: capitalize;
 	-webkit-font-smoothing: antialiased;
 	font-smooth: always;
@@ -592,7 +599,7 @@ a{
 #signin-fields > input[type="text"]:-moz-placeholder,#signin-fields > input[type="password"]:-moz-placeholder {
 	color: #000000;
 	text-transform: capitalize;
-	font-family: 'LatoSemibold', Helvetica, Arial, sans-serif;
+	font-family: 'LatoRegular', Helvetica, Arial, sans-serif;
 	-webkit-font-smoothing: antialiased;
 	font-smooth: always;
 	font-size: 16px;
@@ -600,7 +607,7 @@ a{
 #signin-fields > input[type="text"]::-moz-placeholder,#signin-fields > input[type="password"]::-moz-placeholder {
 	color: #000000;
 	text-transform: capitalize;
-	font-family: 'LatoSemibold', Helvetica, Arial, sans-serif;
+	font-family: 'LatoRegular', Helvetica, Arial, sans-serif;
 	-webkit-font-smoothing: antialiased;
 	font-smooth: always;
 	font-size: 16px;
@@ -612,25 +619,30 @@ a{
 	margin:10px auto;
 	width: 460px;
 	height: 50px;
-	background: #bdc3c7;
+	background: #003689;
 	font-size: 16px;
 	color: #ffffff;
 	border:0;
 	text-shadow:none;
 	text-transform: uppercase;
-	font-family: 'LatoSemibold', Helvetica, Arial, sans-serif;
+	font-family: 'LatoRegular', Helvetica, Arial, sans-serif;
 }
 
 #signin-fields > input[type="submit"]:hover{
-	background: #003689;
+	background: #3f68a8;
 }	
 
 #signin-fields > p{
-	margin:50px 0 0 0;
+	
 	color:#000000;
 	font-size: 16px;
 	text-align: center;
 }
+#signin-fields > p:first-of-type{
+	margin:50px 0 5px 0;
+}
+
+
 #signin-fields > p a{
 	font-size: 15px;
 	text-decoration: underline;
@@ -642,7 +654,7 @@ a{
 }
 
 #footer-separator {
-	margin: 145px 0 0 0;
+	margin: 98px 0 0 0;
 }
 
 #footer-container{
@@ -652,8 +664,12 @@ a{
 	margin: 0;
 	height: 91px;
 	line-height: 91px;
-	font-size: 14px;
+	font-size: 15px;
 }	
+
+#footer-container p span{
+	text-transform: capitalize;
+}
 /* #Page Styles
 ================================================== */
 
@@ -696,35 +712,35 @@ a{
 	    font-style: normal; }
 */
 
-@font-face {
-    font-family: 'calibriregular';
-    src: url('../fonts/calibri/calibri-webfont.eot');
-    src: url('../fonts/calibri/calibri-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/calibri/calibri-webfont.woff') format('woff'),
-         url('../fonts/calibri/calibri-webfont.ttf') format('truetype'),
-         url('../fonts/calibri/calibri-webfont.svg#calibriregular') format('svg');
-    font-weight: normal;
+@font-face {  /* heading*/
+    font-family: 'Lato';
+    src: url('../fonts/Lato-Bold.eot'); 
+    src: url('../fonts/Lato-Bold.eot?#iefix') format('embedded-opentype'), 
+         url('../fonts/Lato-Bold.woff') format('woff'), 
+         url('../fonts/Lato-Bold.ttf') format('truetype'); 
     font-style: normal;
-
+    font-weight: bold;
+    text-rendering: optimizeLegibility;
 }
 
-@font-face {
-    font-family: 'LatoLight';
-    src: url('../fonts/Lato-Light.eot'); /* IE9 Compat Modes */
-    src: url('../fonts/Lato-Light.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-         url('../fonts/Lato-Light.woff') format('woff'), /* Modern Browsers */
-         url('../fonts/Lato-Light.ttf') format('truetype'); 
+
+@font-face { /*sub heading*/
+    font-family: 'LatoMedium';
+    src: url('../fonts/Lato-Medium.eot'); 
+    src: url('../fonts/Lato-Medium.eot?#iefix') format('embedded-opentype'), 
+         url('../fonts/Lato-Medium.woff') format('woff'), 
+         url('../fonts/Lato-Medium.ttf') format('truetype'); 
     font-style: normal;
     font-weight: normal;
     text-rendering: optimizeLegibility;
 }
 
-@font-face {
-    font-family: 'LatoSemibold';
-    src: url('../fonts/Lato-Semibold.eot'); /* IE9 Compat Modes */
-    src: url('../fonts/Lato-Semibold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-         url('../fonts/Lato-Semibold.woff') format('woff'), /* Modern Browsers */
-         url('../fonts/Lato-Semibold.ttf') format('truetype'); 
+@font-face {  /*content*/
+    font-family: 'LatoRegular';
+    src: url('../fonts/Lato-Regular.eot'); 
+    src: url('../fonts/Lato-Regular.eot?#iefix') format('embedded-opentype'), 
+         url('../fonts/Lato-Regular.woff') format('woff'), 
+         url('../fonts/Lato-Regular.ttf') format('truetype'); 
     font-style: normal;
     font-weight: normal;
     text-rendering: optimizeLegibility;
