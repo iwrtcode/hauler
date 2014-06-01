@@ -553,6 +553,12 @@ a{
 	font-smooth:always;
 	text-rendering: optimizeLegibility;
 }
+
+fieldset{
+	margin-bottom:0;
+}
+
+/* signin */
 #logo{
 	 margin:34px 0 0 0;
 	 text-align: center;
@@ -570,14 +576,14 @@ a{
 	color:#e5e8e9;
 }
 
-#signin-container h3{
+#signin-container h3,#signup-container h3{
 	color:#000000;
 	text-transform: capitalize;
 	text-align: center;
 	font-weight: bold;
 }
 
-#signin-fields > input[type="text"],#signin-fields > input[type="password"]{
+#signin-fields > input[type="text"],#signin-fields > input[type="password"] {
 	  display: block;
 	  margin:1px auto;
 	  height:35px;
@@ -588,7 +594,7 @@ a{
 	  border:1px solid #e5e8e9;
 }
 
-#signin-fields > input[type="text"]::-webkit-input-placeholder,#signin-fields > input[type="password"]::-webkit-input-placeholder {
+#signin-fields > input[type="text"]::-webkit-input-placeholder,#signin-fields > input[type="password"]::-webkit-input-placeholder ,#signup-fields-left > input[type="text"]::-webkit-input-placeholder ,#signup-fields-left > input[type="password"]::-webkit-input-placeholder,#signup-fields-right > input[type="text"]::-webkit-input-placeholder {
 	color: #000000;
 	font-family: 'LatoRegular', Helvetica, Arial, sans-serif;
 	text-transform: capitalize;
@@ -596,7 +602,7 @@ a{
 	font-smooth: always;
 	font-size: 16px;
 }
-#signin-fields > input[type="text"]:-moz-placeholder,#signin-fields > input[type="password"]:-moz-placeholder {
+#signin-fields > input[type="text"]:-moz-placeholder,#signin-fields > input[type="password"]:-moz-placeholder,#signup-fields-left > input[type="text"]:-moz-placeholder ,#signup-fields-left > input[type="password"]:-moz-placeholder,#signup-fields-right > input[type="text"]:-moz-placeholder {
 	color: #000000;
 	text-transform: capitalize;
 	font-family: 'LatoRegular', Helvetica, Arial, sans-serif;
@@ -604,7 +610,7 @@ a{
 	font-smooth: always;
 	font-size: 16px;
 }
-#signin-fields > input[type="text"]::-moz-placeholder,#signin-fields > input[type="password"]::-moz-placeholder {
+#signin-fields > input[type="text"]::-moz-placeholder,#signin-fields > input[type="password"]::-moz-placeholder,#signup-fields-left > input[type="text"]::-moz-placeholder ,#signup-fields-left > input[type="password"]::-moz-placeholder,#signup-fields-right  > input[type="text"]::-moz-placeholder  {
 	color: #000000;
 	text-transform: capitalize;
 	font-family: 'LatoRegular', Helvetica, Arial, sans-serif;
@@ -628,12 +634,11 @@ a{
 	font-family: 'LatoRegular', Helvetica, Arial, sans-serif;
 }
 
-#signin-fields > input[type="submit"]:hover{
+#signin-fields > input[type="submit"]:hover,#signup:hover{
 	background: #3f68a8;
 }	
 
 #signin-fields > p{
-	
 	color:#000000;
 	font-size: 16px;
 	text-align: center;
@@ -669,6 +674,64 @@ a{
 
 #footer-container p span{
 	text-transform: capitalize;
+}
+
+/* signup */
+
+#signup-fields-left,#signup-fields-right{
+  margin:40px 0 0 0;
+}
+
+#signup-fields-left > input[type="text"], #signup-fields-left > input[type="password"],#signup-fields-right > input[type="text"]{
+	  display: block;
+	  height:35px;
+	  width:295px;
+	  margin:0 0 5px 0;
+	  background-color: #ffffff;
+	  font-family: 'LatoRegular', Helvetica, Arial, sans-serif;
+	  font-size: 16px;
+	  border:1px solid #e5e8e9;	
+}
+
+#signup-fields-left span,#signup-fields-right span{
+	display: inline-block;
+	margin:0 0 5px 0;
+	color:#ef5145;
+	text-transform: capitalize;
+}
+
+input[type="radio"]{
+	margin: 30px 0 0 0;
+	font-family: 'LatoRegular', Helvetica, Arial, sans-serif;
+	font-size: 16px;
+}
+
+.radio-button-content{ 
+	padding-left: 5px;
+	padding-right: 5px;
+	color: #000000 !important;
+}
+#signup-fields-right {
+	float: right;
+}
+#signup-fields-right {
+	margin-bottom: 20px;
+}
+#tc {
+	margin-top: 20px;
+}
+#signup{
+    float: right;
+	margin:10px auto;
+	width: 250px;
+	height: 50px;
+	background: #003689;
+	font-size: 16px;
+	color: #ffffff;
+	border:0;
+	text-shadow:none;
+	text-transform: uppercase;
+	font-family: 'LatoRegular', Helvetica, Arial, sans-serif;
 }
 /* #Page Styles
 ================================================== */
