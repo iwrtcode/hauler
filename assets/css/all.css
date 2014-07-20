@@ -536,19 +536,19 @@ a{
 	text-decoration: none;
 }
 .text-common-style-heading{
-	font-family: 'Lato', Helvetica, Arial, sans-serif;
+	font-family: 'HelveticaNeueLT-Light', Helvetica, Arial, sans-serif;
 	text-rendering: optimizeLegibility;
 }
 
 .text-common-style-sub-heading{
-	font-family: 'LatoMedium', Helvetica, Arial, sans-serif;
+	font-family: 'HelveticaNeueLT-Light', Helvetica, Arial, sans-serif;
 	-webkit-font-smoothing:antialiased;
 	font-smooth:always;
 	text-rendering: optimizeLegibility;
 }
 
 .text-common-style-content{
-	font-family: 'LatoRegular', Helvetica, Arial, sans-serif;
+	font-family: 'HelveticaNeueLT-Light', Helvetica, Arial, sans-serif;
 	-webkit-font-smoothing:antialiased;
 	font-smooth:always;
 	text-rendering: optimizeLegibility;
@@ -563,7 +563,7 @@ fieldset{
 	 margin:34px 0 0 0;
 	 text-align: center;
 	 font-size: 32px;
-	 font-family: 'Lato';
+	 font-family: 'HelveticaNeueLT-Light';
 	 -webkit-font-smoothing:antialiased;
 	  font-smooth:always;
 	  text-rendering: optimizeLegibility;
@@ -578,45 +578,48 @@ fieldset{
 
 #signin-container h3,#signup-container h3{
 	color:#000000;
-	text-transform: capitalize;
+	text-transform: uppercase;
 	text-align: center;
 	font-weight: bold;
 }
-
+#signin-fields{
+	margin-top: 45px;
+}
 #signin-fields > input[type="text"],#signin-fields > input[type="password"] {
 	  display: block;
 	  margin:1px auto;
 	  height:35px;
 	  width:449px;
 	  background-color: #ffffff;
-	  font-family: 'LatoRegular', Helvetica, Arial, sans-serif;
+	  font-family: 'HelveticaNeueLT-Light', Helvetica, Arial, sans-serif;
 	  font-size: 16px;
 	  border:1px solid #e5e8e9;
+	  border-radius:0;
 }
 
-#signin-fields > input[type="text"]::-webkit-input-placeholder,#signin-fields > input[type="password"]::-webkit-input-placeholder ,#signup-fields-left > input[type="text"]::-webkit-input-placeholder ,#signup-fields-left > input[type="password"]::-webkit-input-placeholder,#signup-fields-right > input[type="text"]::-webkit-input-placeholder {
-	color: #000000;
-	font-family: 'LatoRegular', Helvetica, Arial, sans-serif;
+#signin-fields > input[type="text"]::-webkit-input-placeholder,#signin-fields > input[type="password"]::-webkit-input-placeholder ,#signup-fields-left > input[type="text"]::-webkit-input-placeholder ,#signup-fields-left > input[type="password"]::-webkit-input-placeholder,#signup-fields-right > input[type="text"]::-webkit-input-placeholder, #search-container div div input::-webkit-input-placeholder {
+	color:#cfcccc;
+	font-family: 'HelveticaNeueLT-Light', Helvetica, Arial, sans-serif;
 	text-transform: capitalize;
 	-webkit-font-smoothing: antialiased;
 	font-smooth: always;
-	font-size: 16px;
+	font-size: 14px;
 }
-#signin-fields > input[type="text"]:-moz-placeholder,#signin-fields > input[type="password"]:-moz-placeholder,#signup-fields-left > input[type="text"]:-moz-placeholder ,#signup-fields-left > input[type="password"]:-moz-placeholder,#signup-fields-right > input[type="text"]:-moz-placeholder {
-	color: #000000;
+#signin-fields > input[type="text"]:-moz-placeholder,#signin-fields > input[type="password"]:-moz-placeholder,#signup-fields-left > input[type="text"]:-moz-placeholder ,#signup-fields-left > input[type="password"]:-moz-placeholder,#signup-fields-right > input[type="text"]:-moz-placeholder, #search-container div div input:-moz-placeholder {
+	color: #cfcccc;
 	text-transform: capitalize;
-	font-family: 'LatoRegular', Helvetica, Arial, sans-serif;
+	font-family: 'HelveticaNeueLT-Light', Helvetica, Arial, sans-serif;
 	-webkit-font-smoothing: antialiased;
 	font-smooth: always;
-	font-size: 16px;
+	font-size: 14px;
 }
-#signin-fields > input[type="text"]::-moz-placeholder,#signin-fields > input[type="password"]::-moz-placeholder,#signup-fields-left > input[type="text"]::-moz-placeholder ,#signup-fields-left > input[type="password"]::-moz-placeholder,#signup-fields-right  > input[type="text"]::-moz-placeholder  {
-	color: #000000;
+#signin-fields > input[type="text"]::-moz-placeholder,#signin-fields > input[type="password"]::-moz-placeholder,#signup-fields-left > input[type="text"]::-moz-placeholder ,#signup-fields-left > input[type="password"]::-moz-placeholder,#signup-fields-right  > input[type="text"]::-moz-placeholder, #search-container div div input::-moz-placeholder  {
+	color: #cfcccc;
 	text-transform: capitalize;
-	font-family: 'LatoRegular', Helvetica, Arial, sans-serif;
+	font-family: 'HelveticaNeueLT-Light', Helvetica, Arial, sans-serif;
 	-webkit-font-smoothing: antialiased;
 	font-smooth: always;
-	font-size: 16px;
+	font-size: 14px;
 }
 
 #signin-fields > input[type="submit"]{
@@ -631,10 +634,10 @@ fieldset{
 	border:0;
 	text-shadow:none;
 	text-transform: uppercase;
-	font-family: 'LatoRegular', Helvetica, Arial, sans-serif;
+	font-family: 'HelveticaNeueLT-Light', Helvetica, Arial, sans-serif;
 }
 
-#signin-fields > input[type="submit"]:hover,#signup:hover{
+#signin-fields > input[type="submit"]:hover,#signup:hover,#search:hover{
 	background: #3f68a8;
 }	
 
@@ -659,7 +662,7 @@ fieldset{
 }
 
 #footer-separator {
-	margin: 98px 0 0 0;
+	margin: 54px 0 0 0;
 }
 
 #footer-container{
@@ -688,9 +691,10 @@ fieldset{
 	  width:295px;
 	  margin:0 0 5px 0;
 	  background-color: #ffffff;
-	  font-family: 'LatoRegular', Helvetica, Arial, sans-serif;
+	  font-family: 'HelveticaNeueLT-Light', Helvetica, Arial, sans-serif;
 	  font-size: 16px;
-	  border:1px solid #e5e8e9;	
+	  border:1px solid #e5e8e9;
+	  border-radius:0;	
 }
 
 #signup-fields-left span,#signup-fields-right span{
@@ -702,7 +706,7 @@ fieldset{
 
 input[type="radio"]{
 	margin: 30px 0 0 0;
-	font-family: 'LatoRegular', Helvetica, Arial, sans-serif;
+	font-family: 'HelveticaNeueLT-Light', Helvetica, Arial, sans-serif;
 	font-size: 16px;
 }
 
@@ -721,8 +725,10 @@ input[type="radio"]{
 	margin-top: 20px;
 }
 #signup{
-    float: right;
 	margin:10px auto;
+}	
+#signup,#search{
+    float: right;
 	width: 250px;
 	height: 50px;
 	background: #003689;
@@ -731,7 +737,81 @@ input[type="radio"]{
 	border:0;
 	text-shadow:none;
 	text-transform: uppercase;
-	font-family: 'LatoRegular', Helvetica, Arial, sans-serif;
+	font-family: 'HelveticaNeueLT-Light', Helvetica, Arial, sans-serif;
+}
+
+
+/* search page*/
+
+#logo-search-page{
+	margin-left:0;
+}
+#user-account{
+	float: right;
+	margin-top:32px;
+	margin-right: 0;
+	width: 118px;
+}
+#user-account span a{
+	text-transform: uppercase;
+	font-size: 13px;
+	color:#000000;
+}
+#user-account span a:hover{
+	text-decoration: underline;
+}
+#search-container > div{
+   margin-top:45px;
+}
+#search-container div h3{
+	color:#000000;
+	text-align: center;
+}
+#search-container div h3 span{
+	color:#003689;
+}
+#search-container div div input[type="text"]{
+	height: 35px;
+	width: 287px;
+	margin:0 auto;
+}
+#search-container div div input{
+	border-radius:0;
+}
+#from-city input[type="text"],#to-city input[type="text"]{
+	background: url(../image/map-location.png) no-repeat;
+	background-position: 96% 12px;
+}
+#from-city,#to-city{
+	margin-top:50px;
+}
+#search-container div .eight{
+	margin-left:0;
+	margin-right: 0;
+	margin-bottom: 20px;
+	line-height: 47px;
+}	
+#journey-date{
+	background: url(../image/calendar.png) no-repeat;
+	background-position: 96% 16px;
+	cursor: pointer;
+}
+#search-container div div select{
+	margin:0 auto;
+	height: 49px;
+	width: 297px;
+	border-radius: 0;
+}
+#search{
+	margin-right: 82px !important;
+}
+#search-for-week label {
+	display: inline;	
+    font-weight: normal;
+}
+#search-for-week input[type="checkbox"]{
+	margin-left: 80px;	
+	vertical-align: middle;
 }
 /* #Page Styles
 ================================================== */
@@ -809,3 +889,10 @@ input[type="radio"]{
     text-rendering: optimizeLegibility;
 }
 
+@font-face {
+	font-family: 'HelveticaNeueLT-Light';
+	src: url('../fonts/neue/HelveticaNeueLT-Light.eot?') format('eot'), 
+	     url('../fonts/neue/HelveticaNeueLT-Light.woff') format('woff'), 
+	     url('../fonts/neue/HelveticaNeueLT-Light.ttf')  format('truetype'),
+	     url('../fonts/neue/HelveticaNeueLT-Light.svg#HelveticaNeueLT-Light') format('svg');
+}
