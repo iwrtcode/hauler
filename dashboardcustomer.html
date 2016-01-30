@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+<head>
+
+	<!-- Basic Page Needs
+  ================================================== -->
+	<meta charset="utf-8">
+	<title>Hauler</title>
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+	<!-- Mobile Specific Metas
+  ================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<!-- CSS
+  ================================================== -->
+	<link rel="stylesheet" href="assets/css/all.css">
+  <link rel="stylesheet" href="assets/css/tablesorter.css">
+	<link rel="stylesheet" href="assets/css/colorbox.css">
+	<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
+	<!-- Favicons
+	================================================== -->
+	<link rel="shortcut icon" href="images/favicon.ico">
+	<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+  <script type="text/javascript" src="assets/js/jquery-2.1.1.js"></script> 
+  <script type="text/javascript" src="assets/js/jquery-migrate-1.2.1.min.js"></script>
+  <script type="text/javascript" src="assets/js/jquery.tablesorter.min.js"></script> 
+  <script type="text/javascript" src="assets/js/pagination.js"></script> 
+  <script type="text/javascript" src="assets/js/jquery.colorbox-min.js"></script> 
+  <script type="text/javascript" src="assets/js/scripts.js"></script> 
+</head>
+<body>
+	<div class="container">
+    	<div id="dashboard-header-container" class="sixteen columns">
+          <div id="logo" class="three columns">
+             hauler
+          </div>
+          <div id="dashboard-search-box" class="ten columns">
+              <div class="eight columns">
+                 <input type="text" id="header-dashboard-search-txtbox" placeholder="find a load/vehicle"/>
+              </div>
+              <div class="two columns">
+                 <input type="button" id="header-dashboard-search-btn" value="search" />
+              </div>
+          </div>
+          <div id="user-name-container" class="three columns">
+            <div id="user-name" class="two columns text-common-style-sub-heading">
+                      Vijay thupu laeruk fasdadad
+            </div>
+            <div class="one column menu-arrow">
+            </div> 
+          </div>  
+      </div>
+  </div>          
+  <div class="separator-sign-in-user">
+      <hr>
+  </div>
+  <div class="container">
+      <div id="dashboard-sub-header-container" class="sixteen columns">
+         <ul>
+           <li id="profile" class="text-common-style-sub-heading">profile</li>
+           <li id="agent" class="text-common-style-sub-heading">agent</li>
+           <li id="customer" class="text-common-style-sub-heading">customer</li>
+        </ul>   
+      </div>
+  </div>     	
+  <div class="separator-sign-in-user">
+      <hr>
+  </div>  
+  <div class="container">
+      <div id="dashboard-customer-sub-content-container" class="sixteen columns">
+         <div class="three columns">
+            <ul id="dashboard-customer-content-sidebar">
+              <li class="text-common-style-sub-heading">inquiry</li>
+              <li class="text-common-style-sub-heading">transaction history</li>
+              <li class="text-common-style-sub-heading">sms preference</li>
+            </ul>  
+         </div>
+
+         <div class="thirteen columns dashboard-customer-inquiry-container">
+            <h4 class="text-common-style-heading">inquiry</h4>
+            <div class="thirteen columns dashboard-customer-inquiry-container">
+                <table id="dashboard-customer-inquiry-contents" class="thirteen columns tablesorter"> 
+                    <thead class="thirteen columns text-common-style-sub-heading"> 
+                    <tr class="thirteen columns"> 
+                        <th class="two columns headerSortUp headerSortDown no-margin-left">date</th> 
+                        <th class="two columns headerSortUp headerSortDown no-margin-left">start</th> 
+                        <th class="two columns headerSortUp headerSortDown no-margin-left">end</th> 
+                        <th class="two columns customer-inquiry-price headerSortUp headerSortDown no-margin-left">price</th>
+                         <th class="one columns no-margin-left">add details</th>
+                        <th class="one columns  add-margin-left">view details</th> 
+                        <th class="three columns headerSortUp headerSortDown inquiry-customer-status">status</th> 
+                    </tr> 
+                    </thead> 
+                    <tbody class="thirteen columns"> 
+                      <tr class="thirteen columns"> 
+                          <td class="two columns no-margin-left">25-06-1987</td> 
+                          <td class="two columns no-margin-left">mysoebalore</td> 
+                          <td class="two columns no-margin-left">delhi</td>
+                          <td class="two columns no-margin-left">Rs 500 INR</td>
+                          <td class="one columns no-margin-left"><a class="dashboard-customer-add-details" href="customeradddetails.html"><img src="assets/image/add_details.png" class="customer-add-details" alt="view details" /></a></td>
+                          <td class="one columns add-margin-left"><a class="customer-inquiry-detials-popup" href="customerinquiryviewdetails.html"><img src="assets/image/view.png"  class="customer-view-details" alt="view details" /></a></td>
+                          <td class="three columns inquiry-customer-status"><select disabled><option>approved</option><option>need approval</option></select></td>
+                          <td class="two columns customer-inquiry-update-btn"><input type="button" value="update"/></td>
+                      </tr>
+
+                      <tr class="thirteen columns"> 
+                          <td class="two columns no-margin-left">25-06-1987</td> 
+                          <td class="two columns no-margin-left">mysoebalore</td> 
+                          <td class="two columns no-margin-left">delhi</td>
+                          <td class="two columns no-margin-left">Rs 500 INR</td>
+                          <td class="one columns no-margin-left"><a class="dashboard-customer-add-details" href="customeradddetails.html"><img src="assets/image/add_details.png" class="customer-add-details" alt="view details" /></a></td>
+                          <td class="one columns add-margin-left"><a class="customer-inquiry-detials-popup" href="customerinquiryviewdetails.html"><img src="assets/image/view.png"  class="customer-view-details" alt="view details" /></a></td>
+                          <td class="three columns inquiry-customer-status"><select disabled><option>approved</option><option>need approval</option></select></td>
+                          <td class="two columns customer-inquiry-update-btn"><input type="button" value="update"/></td>
+                      </tr>
+                      <tr class="thirteen columns"> 
+                          <td class="two columns no-margin-left">25-06-1987</td> 
+                          <td class="two columns no-margin-left">mysoebalore</td> 
+                          <td class="two columns no-margin-left">delhi</td>
+                          <td class="two columns no-margin-left">Rs 500 INR</td>
+                          <td class="one columns no-margin-left"><a class="dashboard-customer-add-details" href="customeradddetails.html"><img src="assets/image/add_details.png" class="customer-add-details" alt="view details" /></a></td>
+                          <td class="one columns add-margin-left"><a class="customer-inquiry-detials-popup" href="customerinquiryviewdetails.html"><img src="assets/image/view.png"  class="customer-view-details" alt="view details" /></a></td>
+                          <td class="three columns inquiry-customer-status"><select disabled><option>approved</option><option>need approval</option></select></td>
+                          <td class="two columns customer-inquiry-update-btn"><input type="button" value="update"/></td>
+                      </tr>
+
+                      <tr class="thirteen columns"> 
+                          <td class="two columns no-margin-left">25-06-1987</td> 
+                          <td class="two columns no-margin-left">mysoebalore</td> 
+                          <td class="two columns no-margin-left">delhi</td>
+                          <td class="two columns no-margin-left">Rs 500 INR</td>
+                          <td class="one columns no-margin-left"><a class="dashboard-customer-add-details" href="customeradddetails.html"><img src="assets/image/add_details.png" class="customer-add-details" alt="view details" /></a></td>
+                          <td class="one columns add-margin-left"><a class="customer-inquiry-detials-popup" href="customerinquiryviewdetails.html"><img src="assets/image/view.png"  class="customer-view-details" alt="view details" /></a></td>
+                          <td class="three columns inquiry-customer-status"><select disabled><option>approved</option><option>need approval</option></select></td>
+                          <td class="two columns customer-inquiry-update-btn"><input type="button" value="update"/></td>
+                      </tr>
+
+                      <tr class="thirteen columns"> 
+                          <td class="two columns no-margin-left">25-06-1987</td> 
+                          <td class="two columns no-margin-left">mysoebalore</td> 
+                          <td class="two columns no-margin-left">delhi</td>
+                          <td class="two columns no-margin-left">Rs 500 INR</td>
+                          <td class="one columns no-margin-left"><a class="dashboard-customer-add-details" href="customeradddetails.html"><img src="assets/image/add_details.png" class="customer-add-details" alt="view details" /></a></td>
+                          <td class="one columns add-margin-left"><a class="customer-inquiry-detials-popup" href="customerinquiryviewdetails.html"><img src="assets/image/view.png"  class="customer-view-details" alt="view details" /></a></td>
+                          <td class="three columns inquiry-customer-status"><select disabled><option>approved</option><option>need approval</option></select></td>
+                          <td class="two columns customer-inquiry-update-btn"><input type="button" value="update"/></td>
+                      </tr>
+
+                      <tr class="thirteen columns"> 
+                          <td class="two columns no-margin-left">25-06-1987</td> 
+                          <td class="two columns no-margin-left">mysoebalore</td> 
+                          <td class="two columns no-margin-left">delhi</td>
+                          <td class="two columns no-margin-left">Rs 500 INR</td>
+                          <td class="one columns no-margin-left"><a class="dashboard-customer-add-details" href="customeradddetails.html"><img src="assets/image/add_details.png" class="customer-add-details" alt="view details" /></a></td>
+                          <td class="one columns add-margin-left"><a class="customer-inquiry-detials-popup" href="customerinquiryviewdetails.html"><img src="assets/image/view.png"  class="customer-view-details" alt="view details" /></a></td>
+                          <td class="three columns inquiry-customer-status"><select disabled><option>approved</option><option>need approval</option></select></td>
+                          <td class="two columns customer-inquiry-update-btn"><input type="button" value="update"/></td>
+                      </tr>
+
+                      <tr class="thirteen columns"> 
+                          <td class="two columns no-margin-left">25-06-1987</td> 
+                          <td class="two columns no-margin-left">mysoebalore</td> 
+                          <td class="two columns no-margin-left">delhi</td>
+                          <td class="two columns no-margin-left">Rs 500 INR</td>
+                          <td class="one columns no-margin-left"><a class="dashboard-customer-add-details" href="customeradddetails.html"><img src="assets/image/add_details.png" class="customer-add-details" alt="view details" /></a></td>
+                          <td class="one columns add-margin-left"><a class="customer-inquiry-detials-popup" href="customerinquiryviewdetails.html"><img src="assets/image/view.png"  class="customer-view-details" alt="view details" /></a></td>
+                          <td class="three columns inquiry-customer-status"><select disabled><option>approved</option><option>need approval</option></select></td>
+                          <td class="two columns customer-inquiry-update-btn"><input type="button" value="update"/></td>
+                      </tr>
+
+
+                      <tr class="thirteen columns"> 
+                          <td class="two columns no-margin-left">25-06-1987</td> 
+                          <td class="two columns no-margin-left">mysoebalore</td> 
+                          <td class="two columns no-margin-left">delhi</td>
+                          <td class="two columns no-margin-left">Rs 500 INR</td>
+                          <td class="one columns no-margin-left"><a class="dashboard-customer-add-details" href="customeradddetails.html"><img src="assets/image/add_details.png" class="customer-add-details" alt="view details" /></a></td>
+                          <td class="one columns add-margin-left"><a class="customer-inquiry-detials-popup" href="customerinquiryviewdetails.html"><img src="assets/image/view.png"  class="customer-view-details" alt="view details" /></a></td>
+                          <td class="three columns inquiry-customer-status"><select disabled><option>approved</option><option>need approval</option></select></td>
+                          <td class="two columns customer-inquiry-update-btn"><input type="button" value="update"/></td>
+                      </tr>
+
+                      <tr class="thirteen columns"> 
+                          <td class="two columns no-margin-left">25-06-1987</td> 
+                          <td class="two columns no-margin-left">mysoebalore</td> 
+                          <td class="two columns no-margin-left">delhi</td>
+                          <td class="two columns no-margin-left">Rs 500 INR</td>
+                          <td class="one columns no-margin-left"><a class="dashboard-customer-add-details" href="customeradddetails.html"><img src="assets/image/add_details.png" class="customer-add-details" alt="view details" /></a></td>
+                          <td class="one columns add-margin-left"><a class="customer-inquiry-detials-popup" href="customerinquiryviewdetails.html"><img src="assets/image/view.png"  class="customer-view-details" alt="view details" /></a></td>
+                          <td class="three columns inquiry-customer-status"><select disabled><option>approved</option><option>need approval</option></select></td>
+                          <td class="two columns customer-inquiry-update-btn"><input type="button" value="update"/></td>
+                      </tr>
+
+                      <tr class="thirteen columns"> 
+                          <td class="two columns no-margin-left">25-06-1987</td> 
+                          <td class="two columns no-margin-left">mysoebalore</td> 
+                          <td class="two columns no-margin-left">delhi</td>
+                          <td class="two columns no-margin-left">Rs 500 INR</td>
+                          <td class="one columns no-margin-left"><a class="dashboard-customer-add-details" href="customeradddetails.html"><img src="assets/image/add_details.png" class="customer-add-details" alt="view details" /></a></td>
+                          <td class="one columns add-margin-left"><a class="customer-inquiry-detials-popup" href="customerinquiryviewdetails.html"><img src="assets/image/view.png"  class="customer-view-details" alt="view details" /></a></td>
+                          <td class="three columns inquiry-customer-status"><select disabled><option>approved</option><option>need approval</option></select></td>
+                          <td class="two columns customer-inquiry-update-btn"><input type="button" value="update"/></td>
+                      </tr>
+
+                      <tr class="thirteen columns"> 
+                          <td class="two columns no-margin-left">25-06-1987</td> 
+                          <td class="two columns no-margin-left">mysoebalore</td> 
+                          <td class="two columns no-margin-left">delhi</td>
+                          <td class="two columns no-margin-left">Rs 500 INR</td>
+                          <td class="one columns no-margin-left"><a class="dashboard-customer-add-details" href="customeradddetails.html"><img src="assets/image/add_details.png" class="customer-add-details" alt="view details" /></a></td>
+                          <td class="one columns add-margin-left"><a class="customer-inquiry-detials-popup" href="customerinquiryviewdetails.html"><img src="assets/image/view.png"  class="customer-view-details" alt="view details" /></a></td>
+                          <td class="three columns inquiry-customer-status"><select disabled><option>approved</option><option>need approval</option></select></td>
+                          <td class="two columns customer-inquiry-update-btn"><input type="button" value="update"/></td>
+                      </tr>
+
+                      <tr class="thirteen columns"> 
+                          <td class="two columns no-margin-left">25-06-1987</td> 
+                          <td class="two columns no-margin-left">mysoebalore</td> 
+                          <td class="two columns no-margin-left">delhi</td>
+                          <td class="two columns no-margin-left">Rs 500 INR</td>
+                          <td class="one columns no-margin-left"><a class="dashboard-customer-add-details" href="customeradddetails.html"><img src="assets/image/add_details.png" class="customer-add-details" alt="view details" /></a></td>
+                          <td class="one columns add-margin-left"><a class="customer-inquiry-detials-popup" href="customerinquiryviewdetails.html"><img src="assets/image/view.png"  class="customer-view-details" alt="view details" /></a></td>
+                          <td class="three columns inquiry-customer-status"><select disabled><option>approved</option><option>need approval</option></select></td>
+                          <td class="two columns customer-inquiry-update-btn"><input type="button" value="update"/></td>
+                      </tr>
+
+
+                      <tr class="thirteen columns"> 
+                          <td class="two columns no-margin-left">25-06-1987</td> 
+                          <td class="two columns no-margin-left">mysoebalore</td> 
+                          <td class="two columns no-margin-left">delhi</td>
+                          <td class="two columns no-margin-left">Rs 500 INR</td>
+                          <td class="one columns no-margin-left"><a class="dashboard-customer-add-details" href="customeradddetails.html"><img src="assets/image/add_details.png" class="customer-add-details" alt="view details" /></a></td>
+                          <td class="one columns add-margin-left"><a class="customer-inquiry-detials-popup" href="customerinquiryviewdetails.html"><img src="assets/image/view.png"  class="customer-view-details" alt="view details" /></a></td>
+                          <td class="three columns inquiry-customer-status"><select disabled><option>approved</option><option>need approval</option></select></td>
+                          <td class="two columns customer-inquiry-update-btn"><input type="button" value="update"/></td>
+                      </tr>
+
+                       <tr class="thirteen columns"> 
+                          <td class="two columns no-margin-left">25-06-1987</td> 
+                          <td class="two columns no-margin-left">mysoebalore</td> 
+                          <td class="two columns no-margin-left">delhi</td>
+                          <td class="two columns no-margin-left">Rs 500 INR</td>
+                          <td class="one columns no-margin-left"><a class="dashboard-customer-add-details" href="customeradddetails.html"><img src="assets/image/add_details.png" class="customer-add-details" alt="view details" /></a></td>
+                          <td class="one columns add-margin-left"><a class="customer-inquiry-detials-popup" href="customerinquiryviewdetails.html"><img src="assets/image/view.png"  class="customer-view-details" alt="view details" /></a></td>
+                          <td class="three columns inquiry-customer-status"><select disabled><option>approved</option><option>need approval</option></select></td>
+                          <td class="two columns customer-inquiry-update-btn"><input type="button" value="update"/></td>
+                      </tr> 
+
+                      <tr class="thirteen columns"> 
+                          <td class="two columns no-margin-left">25-06-1987</td> 
+                          <td class="two columns no-margin-left">mysoebalore</td> 
+                          <td class="two columns no-margin-left">delhi</td>
+                          <td class="two columns no-margin-left">Rs 500 INR</td>
+                          <td class="one columns no-margin-left"><a class="dashboard-customer-add-details" href="customeradddetails.html"><img src="assets/image/add_details.png" class="customer-add-details" alt="view details" /></a></td>
+                          <td class="one columns add-margin-left"><a class="customer-inquiry-detials-popup" href="customerinquiryviewdetails.html"><img src="assets/image/view.png"  class="customer-view-details" alt="view details" /></a></td>
+                          <td class="three columns inquiry-customer-status"><select disabled><option>approved</option><option>need approval</option></select></td>
+                          <td class="two columns customer-inquiry-update-btn"><input type="button" value="update"/></td>
+                      </tr> 
+                      
+                    </tbody> 
+                </table>
+                <div id="customer-inquiry-pager" class="pager thirteen columns">
+                    <form>
+                      <img src="assets/image/pagination-left-arrow.png" class="prev"/>
+                      <img src="assets/image/pagination-right-arrow.png" class="next"/>
+                      <select class="pagesize" disabled>
+                         <option selected="selected" value="10">10</option>
+                      </select>
+                    </form>
+                    
+                </div>      
+            </div>
+          </div>
+       
+         <div class="thirteen columns dashboard-customer-transaction-container no-margin" style="display:none">
+            <h4 class="text-common-style-heading">transaction history</h4>
+            <div class="thirteen columns dashboard-customer-transaction-holder">
+              <table id="dashboard-customer-transaction-contents" class="thirteen columns tablesorter"> 
+                  <thead class="thirteen columns text-common-style-sub-heading"> 
+                  <tr class="thirteen columns"> 
+                      <th class="two columns headerSortUp headerSortDown">date</th>
+                      <th class="two columns headerSortUp headerSortDown">start</th> 
+                      <th class="two columns headerSortUp headerSortDown">end</th> 
+                      <th class="three columns headerSortUp headerSortDown">hauler name</th>
+                      <th class="two columns headerSortUp headerSortDown no-margin-left">truck no</th>
+                      <th class="two columns no-margin">status</th> 
+                  </tr> 
+                  </thead> 
+                  <tbody class="thirteen columns"> 
+                    <tr class="thirteen columns"> 
+                        <td class="two columns">25-06-1987</td> 
+                        <td class="two columns">bangalore</td> 
+                        <td class="two columns">hyderabad</td>
+                        <td class="three columns">srs travels</td>
+                        <td class="two columns">ka 01 t 5123</td>
+                        <td class="two columns">completed</td>
+                    </tr>
+
+                      <tr class="thirteen columns"> 
+                        <td class="two columns">25-06-1987</td> 
+                        <td class="two columns">mysorebangalorebangalorebangalorebangalorebangalore</td> 
+                        <td class="two columns">steelbangalorebangalorebangalorebangalore</td>
+                        <td class="three columns">srs travels</td>
+                        <td class="two columns">ka 01 t 5123</td>
+                        <td class="two columns">completed</td>
+                    </tr>
+
+                      <tr class="thirteen columns"> 
+                        <td class="two columns">25-06-1987</td> 
+                        <td class="two columns">mysorebangalorebangalorebangalorebangalorebangalore</td> 
+                        <td class="two columns">steelbangalorebangalorebangalorebangalore</td>
+                        <td class="three columns">srs travels</td>
+                        <td class="two columns">ka 01 t 5123</td>
+                        <td class="two columns">completed</td>
+                    </tr>
+
+                      <tr class="thirteen columns"> 
+                        <td class="two columns">25-06-1987</td> 
+                        <td class="two columns">mysorebangalorebangalorebangalorebangalorebangalore</td> 
+                        <td class="two columns">steelbangalorebangalorebangalorebangalore</td>
+                        <td class="three columns">srs travels</td>
+                        <td class="two columns">ka 01 t 5123</td>
+                        <td class="two columns">completed</td>
+                    </tr>
+
+                      <tr class="thirteen columns"> 
+                        <td class="two columns">25-06-1987</td> 
+                        <td class="two columns">mysorebangalorebangalorebangalorebangalorebangalore</td> 
+                        <td class="two columns">steelbangalorebangalorebangalorebangalore</td>
+                        <td class="three columns">srs travels</td>
+                        <td class="two columns">ka 01 t 5123</td>
+                        <td class="two columns">completed</td>
+                    </tr>
+
+
+                      <tr class="thirteen columns"> 
+                        <td class="two columns">25-06-1987</td> 
+                        <td class="two columns">mysorebangalorebangalorebangalorebangalorebangalore</td> 
+                        <td class="two columns">steelbangalorebangalorebangalorebangalore</td>
+                        <td class="three columns">srs travels</td>
+                        <td class="two columns">ka 01 t 5123</td>
+                        <td class="two columns">completed</td>
+                    </tr>
+
+                      <tr class="thirteen columns"> 
+                        <td class="two columns">25-06-1987</td> 
+                        <td class="two columns">mysorebangalorebangalorebangalorebangalorebangalore</td> 
+                        <td class="two columns">steelbangalorebangalorebangalorebangalore</td>
+                        <td class="three columns">srs travels</td>
+                        <td class="two columns">ka 01 t 5123</td>
+                        <td class="two columns">completed</td>
+                    </tr>
+
+                      <tr class="thirteen columns"> 
+                        <td class="two columns">25-06-1987</td> 
+                        <td class="two columns">mysorebangalorebangalorebangalorebangalorebangalore</td> 
+                        <td class="two columns">steelbangalorebangalorebangalorebangalore</td>
+                        <td class="three columns">srs travels</td>
+                        <td class="two columns">ka 01 t 5123</td>
+                        <td class="two columns">completed</td>
+                    </tr>
+
+                      <tr class="thirteen columns"> 
+                        <td class="two columns">25-06-1987</td> 
+                        <td class="two columns">mysorebangalorebangalorebangalorebangalorebangalore</td> 
+                        <td class="two columns">steelbangalorebangalorebangalorebangalore</td>
+                        <td class="three columns">srs travels</td>
+                        <td class="two columns">ka 01 t 5123</td>
+                        <td class="two columns">completed</td>
+                    </tr>
+
+                      <tr class="thirteen columns"> 
+                        <td class="two columns">25-06-1987</td> 
+                        <td class="two columns">mysorebangalorebangalorebangalorebangalorebangalore</td> 
+                        <td class="two columns">steelbangalorebangalorebangalorebangalore</td>
+                        <td class="three columns">srs travels</td>
+                        <td class="two columns">ka 01 t 5123</td>
+                        <td class="two columns">completed</td>
+                    </tr>
+
+                      <tr class="thirteen columns"> 
+                        <td class="two columns">25-06-1987</td> 
+                        <td class="two columns">mysorebangalorebangalorebangalorebangalorebangalore</td> 
+                        <td class="two columns">steelbangalorebangalorebangalorebangalore</td>
+                        <td class="three columns">srs travels</td>
+                        <td class="two columns">ka 01 t 5123</td>
+                        <td class="two columns">completed</td>
+                    </tr>
+
+                      <tr class="thirteen columns"> 
+                        <td class="two columns">25-06-1987</td> 
+                        <td class="two columns">mysorebangalorebangalorebangalorebangalorebangalore</td> 
+                        <td class="two columns">steelbangalorebangalorebangalorebangalore</td>
+                        <td class="three columns">srs travels</td>
+                        <td class="two columns">ka 01 t 5123</td>
+                        <td class="two columns">completed</td>
+                    </tr>
+
+                      <tr class="thirteen columns"> 
+                        <td class="two columns">25-06-1987</td> 
+                        <td class="two columns">mysorebangalorebangalorebangalorebangalorebangalore</td> 
+                        <td class="two columns">steelbangalorebangalorebangalorebangalore</td>
+                        <td class="three columns">srs travels</td>
+                        <td class="two columns">ka 01 t 5123</td>
+                        <td class="two columns">completed</td>
+                    </tr>
+
+                      <tr class="thirteen columns"> 
+                        <td class="two columns">25-06-1987</td> 
+                        <td class="two columns">mysorebangalorebangalorebangalorebangalorebangalore</td> 
+                        <td class="two columns">steelbangalorebangalorebangalorebangalore</td>
+                        <td class="three columns">srs travels</td>
+                        <td class="two columns">ka 01 t 5123</td>
+                        <td class="two columns">completed</td>
+                    </tr>
+
+                      <tr class="thirteen columns"> 
+                        <td class="two columns">25-06-1987</td> 
+                        <td class="two columns">mysorebangalorebangalorebangalorebangalorebangalore</td> 
+                        <td class="two columns">steelbangalorebangalorebangalorebangalore</td>
+                        <td class="three columns">srs travels</td>
+                        <td class="two columns">ka 01 t 5123</td>
+                        <td class="two columns">completed</td>
+                    </tr>
+
+                      <tr class="thirteen columns"> 
+                        <td class="two columns">25-06-1987</td> 
+                        <td class="two columns">mysorebangalorebangalorebangalorebangalorebangalore</td> 
+                        <td class="two columns">steelbangalorebangalorebangalorebangalore</td>
+                        <td class="three columns">srs travels</td>
+                        <td class="two columns">ka 01 t 5123</td>
+                        <td class="two columns">completed</td>
+                    </tr>
+
+                      <tr class="thirteen columns"> 
+                        <td class="two columns">25-06-1987</td> 
+                        <td class="two columns">mysorebangalorebangalorebangalorebangalorebangalore</td> 
+                        <td class="two columns">steelbangalorebangalorebangalorebangalore</td>
+                        <td class="three columns">srs travels</td>
+                        <td class="two columns">ka 01 t 5123</td>
+                        <td class="two columns">completed</td>
+                    </tr>
+
+                      <tr class="thirteen columns"> 
+                        <td class="two columns">25-06-1987</td> 
+                        <td class="two columns">mysorebangalorebangalorebangalorebangalorebangalore</td> 
+                        <td class="two columns">steelbangalorebangalorebangalorebangalore</td>
+                        <td class="three columns">srs travels</td>
+                        <td class="two columns">ka 01 t 5123</td>
+                        <td class="two columns">completed</td>
+                    </tr>
+
+                      <tr class="thirteen columns"> 
+                        <td class="two columns">25-06-1987</td> 
+                        <td class="two columns">mysorebangalorebangalorebangalorebangalorebangalore</td> 
+                        <td class="two columns">steelbangalorebangalorebangalorebangalore</td>
+                        <td class="three columns">srs travels</td>
+                        <td class="two columns">ka 01 t 5123</td>
+                        <td class="two columns">completed</td>
+                    </tr>
+                  
+                  </tbody>
+              </table>
+               <div id="customer-transaction-pager" class="pager thirteen columns">
+                  <form>
+                    <img src="assets/image/pagination-left-arrow.png" class="prev"/>
+                    <img src="assets/image/pagination-right-arrow.png" class="next"/>
+                    <select class="pagesize" disabled>
+                      <option selected="selected" value="10">10</option>
+                    </select>
+                  </form>
+             </div>    
+            </div>
+          
+  
+         </div>
+
+       
+      </div>
+  </div>    
+  <div id="footer-separator-more-content" class="separator">
+    <hr>
+  </div>
+  <div id="footer-container-more-content" class="container">
+     <p class="text-common-style-content">&copy;&nbsp;2014<span>&nbsp;hauler</span> all rights reserved.</p>
+  </div>  
+
+
+
+<!-- End Document
+================================================== -->
+</body>
+</html>

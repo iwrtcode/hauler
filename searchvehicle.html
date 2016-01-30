@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+<head>
+
+	<!-- Basic Page Needs
+  ================================================== -->
+	<meta charset="utf-8">
+	<title>Hauler</title>
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+	<!-- Mobile Specific Metas
+  ================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<!-- CSS
+  ================================================== -->
+	<link rel="stylesheet" href="assets/css/all.css">
+  <link rel="stylesheet" href="assets/css/jquery-ui.min.css">
+	<link rel="stylesheet" href="assets/css/tablesorter.css">
+	<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
+	<!-- Favicons
+	================================================== -->
+	<link rel="shortcut icon" href="images/favicon.ico">
+	<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+  <script type="text/javascript" src="assets/js/jquery-2.1.1.js"></script>
+  <script type="text/javascript" src="assets/js/jquery-ui-1.10.4.min.js"></script>  
+  <script type="text/javascript" src="assets/js/jquery.tablesorter.min.js"></script> 
+  <script type="text/javascript" src="assets/js/scripts.js"></script> 
+</head>
+<body>
+	<div class="container">
+    	<div class="sixteen columns">
+    		<div id="logo-search-page" class="two columns">
+    			<a href="index.html"><p id="logo">hauler</p></a>
+    		</div>
+    		<div id="user-account" class="three columns">
+    			<span><a class="text-common-style-content" href="signin.html">sign in</a></span>
+    			<span>/</span>
+    			<span><a class="text-common-style-content" href="signup.html">sign up</a></span>
+    		</div>
+        </div>
+    </div>
+	<div class="separator">
+	  	<hr>
+	</div>
+    <div id="search-vehicle-container" class="container">
+    	  <div class="sixteen columns">
+           <div id="search-vehicle-filter" class="three columns">
+                <div id="search-vehicle-filter-title" class="three columns">
+                   <h6 class="text-common-style-sub-heading">filter by</h6>
+                </div>
+                <div id="filter-type-vehicle" class="three columns">
+                  <div id="filter-type-vehicle-title" class="three columns">
+                    <div class="two columns">
+                      <span class="text-common-style-content">Type</span>
+                      <span class="text-common-style-content"><a href>clear</a></span>
+                    </div>
+                    <div class="one columns">
+                       <span><img src="" /></span>
+                    </div>  
+                  </div>
+                  <div id="filter-type-vehicle-content" class="three columns">
+                     <fieldset>
+                        <label for="steel">
+                          <input type="radio" name="radios" id="steel" class="text-common-style-content" value="radio 1" />
+                          <span>owner</span>
+                        </label>
+                        <label for="cement">
+                          <input type="radio" name="radios" id="cement" class="text-common-style-content" value="radio 2" />
+                          <span>agent</span>
+                        </label>
+                      </fieldset>
+                  </div>
+                </div>  
+           </div>
+           <div id="search-vehicle-holder" class="thirteen columns">
+              <div id="search-load-fields" class="eleven columns">
+                 <div class="three columns">
+                     <input type="text" id="search-vehicle-start" class="text-common-style-content" placeholder="Start &#45; Hubli&#44; Karnataka" value="" />
+                 </div>
+                 <div class="three columns">
+                     <input type="text" id="search-vehicle-end" class="text-common-style-content" placeholder="End &#45; Mysore&#44; Karnataka " value="" />
+                 </div> 
+                 <div class="three columns">
+                     <input type="text" id="search-vehicle-journey-date" class="text-common-style-content" placeholder="Journey date" value=""  readonly="readonly"/>
+                 </div>
+                 <div class="three columns">
+                   <div id="search-vehicle-down-arrow-looking-for" class="text-common-style-content">looking for</div>
+                 </div>
+                 <div class="three columns">
+                   <div id="search-vehicle-down-arrow-vehicle-type" class="text-common-style-content">vehicle type</div>
+                 </div>  
+                 <div class="three columns">
+                   <div id="search-vehicle-down-arrow-show-results" class="text-common-style-content">show results</div>
+                 </div>    
+              </div>
+              <div class="two columns">
+                 <input type="submit" id="search-vehicle" value="search" />
+              </div> 
+              <div id="search-vehicle-results" class="thirteen columns">
+                <table id="search-vehicle-results-content" class="thirteen columns tablesorter"> 
+                    <thead class="thirteen columns text-common-style-sub-heading"> 
+                    <tr class="thirteen columns"> 
+                        <th class="three columns headerSortUp headerSortDown">start</th> 
+                        <th class="three columns headerSortUp headerSortDown">end</th> 
+                        <th class="three columns headerSortUp headerSortDown">load type</th>
+                        <th class="two columns headerSortUp headerSortDown">rating</th> 
+                    </tr> 
+                    </thead> 
+                    <tbody class="thirteen columns"> 
+                        <tr class="thirteen columns"> 
+                            <td class="three columns">bangalorebangalorebangalorebangalorebangalorebangalore</td> 
+                            <td class="three columns">mysorebangalorebangalorebangalorebangalorebangalorebangalore</td> 
+                            <td class="three columns">steelbangalorebangalorebangalorebangalorebangalorebangalore</td>
+                            <td class="two columns">
+                                 <img src="assets/image/smiley.png" class="ratings-img" alt="ratings" />
+                                 <p class="ratings-text">Very good</p>
+                            </td>
+                            <td class="two columns"><input type="button" class="text-common-style-content" value="Inquiry" /></td>
+                        </tr> 
+                        <tr class="thirteen columns"> 
+                            <td class="three columns">chennai</td> 
+                            <td class="three columns">hyderabad</td> 
+                            <td class="three columns">steel</td>
+                            <td class="two columns">
+                                 <img src="assets/image/smiley.png" class="ratings-img" alt="ratings" />
+                                 <p class="ratings-text">Very good</p>
+                            </td>
+                            <td class="two columns"><input type="button" value="Inquiry" class="text-common-style-content"/></td>
+                        </tr> 
+                        <tr class="thirteen columns"> 
+                            <td class="three columns">bangalore</td> 
+                            <td class="three columns">mysore</td> 
+                            <td class="three columns">cement</td>
+                            <td class="two columns">
+                                 <img src="assets/image/smiley.png" class="ratings-img" alt="ratings" />
+                                 <p class="ratings-text">Very good</p>
+                            </td>
+                            <td class="two columns"><input type="button" value="Inquiry" class="text-common-style-content"/></td>
+                        </tr> 
+                        <tr class="thirteen columns"> 
+                            <td class="three columns">chennai</td> 
+                            <td class="three columns">hyderabad</td> 
+                            <td class="three columns">steel</td>
+                            <td class="two columns">
+                                 <img src="assets/image/smiley.png" class="ratings-img" alt="ratings" />
+                                 <p class="ratings-text">Very good</p>
+                            </td>
+                            <td class="two columns"><input type="button" value="Inquiry" class="text-common-style-content"/></td>
+                        </tr> 
+                    </tbody> 
+                </table> 
+            </div> 
+           </div>
+        </div>  
+  	</div>		
+  		<div id="footer-separator-more-content" class="separator">
+	  		<hr>
+	    </div>
+	    <div id="footer-container-more-content" class="container">
+	    	<p class="text-common-style-content">&copy;&nbsp;2014<span>&nbsp;hauler</span> all rights reserved.</p>
+	    </div>	
+    	
+    
+  
+
+
+
+
+<!-- End Document
+================================================== -->
+</body>
+</html>

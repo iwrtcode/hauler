@@ -19,7 +19,7 @@
 	<!-- CSS
   ================================================== -->
 	<link rel="stylesheet" href="assets/css/all.css">
-	
+	<link rel="stylesheet" href="assets/css/jquery-ui.min.css">
 	<!--[if lt IE 9]>
 		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
 	<![endif]-->
@@ -30,13 +30,15 @@
 	<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
 	<link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
 	<link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
-
+  <script type="text/javascript" src="assets/js/jquery-2.1.1.js"></script> 
+  <script type="text/javascript" src="assets/js/jquery-ui-1.10.4.min.js"></script> 
+  <script type="text/javascript" src="assets/js/scripts.js"></script> 
 </head>
 <body>
 	<div class="container">
     	<div class="sixteen columns">
     		<div id="logo-search-page" class="two columns">
-    			<a href="index.html"><p id="logo">hauler</p></a>
+    			<a href="index.html"><p id="logo-txt">hauler</p></a>
     		</div>
     		<div id="user-account" class="three columns">
     			<span><a class="text-common-style-content" href="signin.html">sign in</a></span>
@@ -53,12 +55,15 @@
   	       <h3 class="text-common-style-content">Booking trucks or searching loads, made easy. <span>It's Free!</span></h3>
   	       <div id="from-city" class="eight columns">
   	       	  <input class="text-common-style-content" type="text" name="from-a-place" placeholder="Start : Bangalore, Karnataka">
+  	       	  <span class="error-message">Enter your start place</span>
   	       </div>
   	       <div id="to-city" class="eight columns">
   	       	  <input class="text-common-style-content" type="text" name="from-a-place" placeholder="End : Mysore, Karnataka">
+  	       	  <span class="error-message">Enter your end place</span>
   	       </div>
   	       <div class="eight columns">
-  	       	  <input class="text-common-style-content" type="text" id="journey-date" name="journey-date" placeholder="Journey Date">
+  	       	  <input class="text-common-style-content" type="text" id="journey-date" name="journey-date" placeholder="Journey Date" readonly="readonly">
+  	       	  <span class="error-message">Enter your journey date</span>
   	       </div>
   	       <div class="eight columns">
   	       	 <select name="type-of-hauler" id="type-of-hauler">
@@ -66,30 +71,29 @@
   	       	 	<option value="">Tempo</option>
   	       	 	<option value="">Ace</option>
   	       	 </select>
+  	       	 <span class="error-message">Select type of van</span>
   	       </div>
   	       <div id="search-for-week" class="eight columns">
-  	         	<input type="checkbox" name="searchforweek" id="searchforweek" value="week" />
-          		<!-- <span class="text-common-style-content">Show search result for this week</span> -->
-          		<label for="searchforweek">Show search result for this week</label>
+  	         	<fieldset>
+                    <input type="radio" name="radios" id="regularRadio" value="radio 1" />
+                    <span class="radio-button-content">load</span>
+                    <input type="radio" name="radios" id="regularRadio" value="radio 1" />
+                    <span class="radio-button-content">vehicle</span>
+                </fieldset>
+                <span class="error-message">Searching for</span>
           	</div>	
   	       <div class="eight columns">
-  	       	  <input type="submit" id="search" value="search">  
+  	       	  <input type="submit" id="search" value="search" class="text-common-style-content">  
   	       </div>
   		</div>
   	</div>		
-  		<div id="footer-separator" class="separator">
+  		<div id="footer-separator-more-content" class="separator">
 	  		<hr>
 	    </div>
-	    <div id="footer-container" class="container">
+	    <div id="footer-container-more-content" class="container">
 	    	<p class="text-common-style-content">&copy;&nbsp;2014<span>&nbsp;hauler</span> all rights reserved.</p>
 	    </div>	
     	
-    
-  
-
-
-
-
 <!-- End Document
 ================================================== -->
 </body>
